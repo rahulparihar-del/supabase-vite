@@ -57,7 +57,7 @@ export default function EmailSignIn({setToken}) {
           console.log('User signed in with Google and More :', user);
         }
       } catch (error) {
-        console.error('Error during Google sign-in:', error.message);
+        console.error('Error gtytduring Google sign-in:', error.message);
       }
       debugger
       console.log(data);
