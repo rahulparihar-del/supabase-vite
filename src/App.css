@@ -1,0 +1,74 @@
+/* YourComponent.css */
+
+/* Base styles */
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.formOne {
+  width: 100%;
+  max-width: 400px; /* Set a maximum width for the form */
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px; /* Add margin for better spacing */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 15px; /* Adjust padding for smaller screens */
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buttonOne {
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonOne:hover {
+  background-color: #5b5f61;
+  color: white;
+}
+
+.SignUp, .SignIn {
+  margin-left: 0; /* Reset margin for smaller screens */
+  margin-top: 18px;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .formOne {
+      padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .SignUp {
+      margin-left: 0;
+  }
+
+  .SignIn {
+      margin-left: 0;
+  }
+
+  .h11 {
+      width: 100%;  
+      margin-left: 35px;
+
+  }
+}

@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+
+:root {
+  --primary: black;
+  --secondary: #6d15df;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  color: #333;
+  font-family: 'Poppins';
+  background: #f2f2f2;
+}
+
+nav {
+  background: var(--primary);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+nav a:hover {
+  border-bottom: 1px solid rgb(255, 249, 249);
+}
+
+nav a:active {
+  border-bottom: 1px solid rgb(255, 249, 249);
+}
+
+nav h1 {
+  color: #ffffff;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Responsive smoothie grid */
+.smoothie-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .smoothie-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .smoothie-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Responsive smoothie card */
+.smoothie-card {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  position: relative;
+  border: 0.5px solid rgb(196, 185, 185);
+}
+
+.smoothie-card .rating {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: var(--secondary);
+  color: #fff;
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.smoothie-card i {
+  color: #000000;
+  margin-left: 10px;
+  font-size: 1.2em;
+  padding: 6px;
+  background: #eee;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.smoothie-card i:hover{
+  background-color: #333;
+  color: white;
+}
+
+/* Responsive form */
+form {
+  background: #fff;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin: 10px 0 20px 0;
+  font-weight: bold;
+}
+form label{
+  font-weight: bold;
+}
+
+form button {
+  background: var(--primary);
+  color: #f8f8f8;
+  border: 0;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+
+form button:hover {
+  color: rgb(0, 0, 0);
+  background-color: #333;
+}
+
+
+
+.h11 {
+  width: 265px;
+ border-bottom: 2px solid #6d15df;
+ /* margin-left: 50px; */
+}
+
+
+/* styles.css */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #55acee; /* Change color on hover (Twitter blue) */
+}
+
+.googlebtn {
+  margin-left: 130px;
+  background-color: #55acee;
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .googlebtn {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 0;
+  }
+
+  .smoothie-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .smoothie-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 10px;
+  }
+
+  .page {
+    padding: 10px;
+  }
+
+  .smoothie-card .rating {
+    top: auto;
+    bottom: -10px;
+    right: 10px;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+}
