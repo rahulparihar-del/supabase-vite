@@ -54,7 +54,7 @@ export default function EmailSignIn({setToken}) {
         if (error) {
           console.error(error);
         } else {
-          console.log('User signed in with Google:', user);
+          console.log('User signed in with Google and More :', user);
         }
       } catch (error) {
         console.error('Error during Google sign-in:', error.message);
