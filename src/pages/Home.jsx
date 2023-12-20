@@ -33,7 +33,7 @@ export default function Home({token}) {
       const { data, error } = await supabase.from("todos").select("*");
 
       if (error) {
-        setFetchError("Could not fetch the todos");
+        setFetchError("Could not fetch the todos List");
         setTodos(null);
         console.log(error);
       }
