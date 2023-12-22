@@ -32,11 +32,7 @@ nav a {
 }
 
 nav a:hover {
-  border-bottom: 1px solid rgb(255, 249, 249);
-}
-
-nav a:active {
-  border-bottom: 1px solid rgb(255, 249, 249);
+  border-bottom: 1px solid #6d15df;
 }
 
 nav h1 {

@@ -95,15 +95,11 @@ export default function EmailSignIn({setToken}) {
              {formError && <p className="error" style={myInlineStyle}>{formError}</p>}
 
         <button type="submit" className="buttonOne">Sign In</button>
-        <button type="button" onClick={handleGoogleLogin} className='googlebtn'>
+        {/* <button type="button" onClick={handleGoogleLogin} className='googlebtn'>
           Login with Google
-        </button>
+        </button> */}
 
-        <div id="pariharmali56@gmail.com"
-     data-client_id='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpzeWhxb2RreWRseWJlanp1aW5hIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDI2MjA2MjksImV4cCI6MjAxODE5NjYyOX0.IXJrzmsjOhFcZdqhc-rQd9rVO5UgRhir9wVj4otPXxI'
-     data-login_uri='https://zsyhqodkydlybejzuina.supabase.co'
-     data-auto_select="true">
-    </div>
+        
 
         <div className="SignIn">
         Don't have an account yet? <Link to={"/signUp"}>Sign Up</Link>
